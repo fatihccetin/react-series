@@ -12,11 +12,20 @@ const App = () => {
         <>
             <div className="card-group">
              
-             <Card cardTitle="İzmir" />
+             <Card cardTitle="İzmir" 
+                   cardText="Lorem Ipsum I" 
+                   updatedTime="Last update 1 min " 
+                   image="https://picsum.photos/id/1/200/300" />
 
-             <Card cardTitle="Adana" />
+             <Card cardTitle="Adana"
+                   cardText="Lorem Ipsum II" 
+                   updatedTime="Last update 2 min " 
+                   image="https://picsum.photos/id/10/200/300" />
 
-             <Card cardTitle="urfa" />
+             <Card cardTitle="urfa" 
+                   cardText="Lorem Ipsum III" 
+                   updatedTime="Last update 3 min " 
+                   image="https://picsum.photos/id/100/200/300"/>
 
                 
             </div>
