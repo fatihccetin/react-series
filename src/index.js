@@ -1,17 +1,33 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reactDom from 'react-dom';
+import './sass/index.scss'
+
+import Card from './components/Card';
 
 
 
-ReactDOM.render(
-  <React.StrictMode>
+const App = () => {
+    return (
+        <>
+            <div className="card-group">
+             
+             <Card  />
+
+             <Card  />
+
+             <Card  />
+
+                
+            </div>
+        </>
+    );
+}
+
+reactDom.render(
+    <>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    </>,
+    document.getElementById('root')
 );
 
-
-reportWebVitals();
+ export default App();
