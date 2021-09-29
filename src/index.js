@@ -7,15 +7,16 @@ import Card from './components/Card';
 
 
 const App = () => {
+    
     return (
         <>
             <div className="card-group">
              
-             <Card  />
+             <Card cardTitle="İzmir" />
 
-             <Card  />
+             <Card cardTitle="Adana" />
 
-             <Card  />
+             <Card cardTitle="urfa" />
 
                 
             </div>
