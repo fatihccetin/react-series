@@ -6,18 +6,28 @@ class Collapse extends React.Component {
         super();
 
         this.state={
-            showContent: true
+            showContent: false
         }
-    }
 
+       
+            // this.showMore = this.showMore.bind(this)
+    }
+        // showMore(){
+        //         this.setState({showContent: true})
+        // }
+
+        showMore = () => {
+            //console.log(this);
+            this.setState({showContent: !this.state.showContent})
+        }
     render(){
         return (
             <div>
-                <a className="btn btn-primary w-100">
+                <button className="btn btn-primary w-100" onClick={this.showMore}>
                    {/* 
                 "  data-bs-toggle="collapse" href={"#".concat(this.props.href)} role="button" aria-expanded="false" aria-controls="collapseExample"concat iki string birleştirme */}
                     Link with href
-                </a>
+                </button>
                 {
                     this.state.showContent ? (
                     <div className="collapse show" >
