@@ -1,6 +1,12 @@
 import React from "react";
 import '../sass/index.scss';
 
+
+//İlk constructor calıştı 
+//render ılk defa calıstı 
+//onclıck eventi çalıştı
+//setState rnder methedunu tekrar calıştırıyor 
+
 class Collapse extends React.Component {
     constructor(){
         super();
@@ -8,9 +14,6 @@ class Collapse extends React.Component {
         this.state={
             showContent: false
         }
-
-       
-            // this.showMore = this.showMore.bind(this)
     }
         // showMore(){
         //         this.setState({showContent: true})
@@ -19,6 +22,8 @@ class Collapse extends React.Component {
         showMore = () => {
             //console.log(this);
             this.setState({showContent: !this.state.showContent})
+
+            
         }
     render(){
         return (
